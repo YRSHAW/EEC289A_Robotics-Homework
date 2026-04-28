@@ -97,8 +97,8 @@
       },
       "command_keep_prob": [
         1.0,
-        0.15,
-        0.15
+        0.5,
+        0.0
       ]
     },
     "reward_scales": {
