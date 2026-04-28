@@ -41,10 +41,10 @@
     "name": "stage_1",
     "num_timesteps": 10000000,
     "command_range": {
-      "min": [0.0, -0.05, -0.05],
-      "max": [0.5,  0.05,  0.05]
+      "min": [-0.3, -0.2, -0.3],
+      "max": [ 0.5,  0.2,  0.3]
     },
-    "command_keep_prob": [1.0, 0.3, 0.2],
+    "command_keep_prob": [1.0, 0.4, 0.3],
     "reward_scales": {
       "action_rate": -0.02,
       "energy": -0.0015
@@ -54,16 +54,16 @@
     "name": "stage_2",
     "num_timesteps": 10000000,
     "command_range": {
-      "min": [0.0, -0.05, -0.05],
-      "max": [0.5,  0.05,  0.05]
+      "min": [-0.5, -0.3, -0.5],
+      "max": [ 0.5,  0.3,  0.5]
     },
-    "command_keep_prob": [1.0, 0.3, 0.2],
+    "command_keep_prob": [1.0, 0.5, 0.4],
     "student_stage2_goal": {
       "command_range": {
         "min": [-0.5, -0.5, -0.5],
         "max": [ 0.5,  0.5,  0.5]
       },
-      "command_keep_prob": [1.0, 0.5, 0.4]
+      "command_keep_prob": [1.0, 0.6, 0.5]
     },
     "reward_scales": {
       "action_rate": -0.015,
