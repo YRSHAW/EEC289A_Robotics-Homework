@@ -64,7 +64,7 @@
   },
   "stage_2": {
     "name": "stage_2",
-    "num_timesteps": 5000000,
+    "num_timesteps": 8000000,
     "command_range": {
       "min": [
         0.0,
@@ -86,24 +86,24 @@
       "command_range": {
         "min": [
           -0.6,
-          -0.2,
-          -0.6
+          -0.1,
+          -0.3
         ],
         "max": [
           0.6,
-          0.2,
-          0.6
+          0.1,
+          0.3
         ]
       },
       "command_keep_prob": [
         1.0,
-        0.35,
-        0.35
+        0.15,
+        0.15
       ]
     },
     "reward_scales": {
-      "action_rate": -0.03,
-      "energy": -0.002
+      "action_rate": -0.015,
+      "energy": -0.001
     },
     "restore_previous_stage_checkpoint": true
   },
