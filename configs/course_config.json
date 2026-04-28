@@ -67,7 +67,8 @@
     },
     "reward_scales": {
       "action_rate": -0.015,
-      "energy": -0.001
+      "energy": -0.001,
+      "feet_air_time": 1.0
     },
     "restore_previous_stage_checkpoint": true
   },
