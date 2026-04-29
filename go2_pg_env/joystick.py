@@ -493,8 +493,8 @@ class Joystick(go2_base.Go2Env):
         cmd_moving = (jp.linalg.norm(commands) > 0.01)
         # Reward landing after airborne
         landing = jp.sum((air_time - 0.05) * first_contact)
-        # Continuous bonus: reward any foot being airborne each step
-        stepping = jp.any(air_time > 0.0).astype(jp.float32) * 0.5
+        # Penalize all-feet-grounded: -1 when no foot in air, +1 when any foot in air
+        stepping = (jp.any(air_time > 0.0).astype(jp.float32) - 0.5) * 2.0
         return (landing + stepping) * cmd_moving
 
     # --- Perturbation and command sampling --------------------------------
