@@ -490,7 +490,7 @@ class Joystick(go2_base.Go2Env):
         return jp.sum(jp.square(error) * first_contact) * (jp.linalg.norm(info["command"]) > 0.01)
 
     def _reward_feet_air_time(self, air_time: jax.Array, first_contact: jax.Array, commands: jax.Array) -> jax.Array:
-        return jp.sum((air_time - 0.1) * first_contact) * (jp.linalg.norm(commands) > 0.01)
+        return jp.sum((air_time - 0.05) * first_contact) * (jp.linalg.norm(commands) > 0.01)
 
     # --- Perturbation and command sampling --------------------------------
 

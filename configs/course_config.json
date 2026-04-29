@@ -47,7 +47,8 @@
     "command_keep_prob": [1.0, 0.4, 0.3],
     "reward_scales": {
       "action_rate": -0.02,
-      "energy": -0.0015
+      "energy": -0.0015,
+      "feet_slip": -0.5
     }
   },
   "stage_2": {
