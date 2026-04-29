@@ -53,7 +53,7 @@
   },
   "stage_2": {
     "name": "stage_2",
-    "num_timesteps": 10000000,
+    "num_timesteps": 20000000,
     "command_range": {
       "min": [-0.5, -0.3, -0.5],
       "max": [ 0.5,  0.3,  0.5]
@@ -70,7 +70,8 @@
       "action_rate": -0.015,
       "energy": -0.001,
       "feet_air_time": 5.0,
-      "feet_slip": -1.0
+      "feet_slip": -1.0,
+      "pose": 0.1
     },
     "restore_previous_stage_checkpoint": true
   },
